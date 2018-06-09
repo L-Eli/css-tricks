@@ -1,0 +1,104 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    html, body {
+        margin: 0;
+        background-color: #eee;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .chart {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(100, 1fr);
+        grid-column-gap: 5px;
+        height: 100vh;
+        width: 70vw;
+        padding: 5px 10px;
+    }
+    
+    [class*="bar"] {
+        margin: 0;
+        padding: 0;
+        border-radius: 5px 5px 0 0;
+        transition: all .6s ease;
+        grid-row-end: 102;
+    }
+    [class*="bar"]:hover {
+        opacity: .5;
+        cursor: pointer;
+    }
+    
+    .bar-1 {
+        grid-row-start: 1;
+    }
+    
+    .bar-2 {
+        grid-row-start: 30;
+    }
+    
+    .bar-3 {
+        grid-row-start: 20;
+    }
+    
+    .bar-4 {
+        grid-row-start: 50;
+    }
+    
+    .bar-5 {
+        grid-row-start: 60;
+    }
+    
+    .bar-6 {
+        grid-row-start: 20;
+    }
+    
+    .bar-7 {
+        grid-row-start: 30;
+    }
+    
+    .bar-8 {
+        grid-row-start: 10;
+    }
+    
+    .bar-9 {
+        grid-row-start: 80;
+    }
+    
+    .bar-10 {
+        grid-row-start: 40;
+    }
+    
+    .bar-11 {
+        grid-row-start: 20;
+    }
+    
+    .bar-12 {
+        grid-row-start: 60;
+    }
+    
+    [class*="bar"]:nth-child(odd) {
+        background-color: #ff4136;
+    }
+    
+    [class*="bar"]:nth-child(even) {
+        background-color: #0074d9;
+    }
+</style>
+<div class="chart">
+    <div class="bar-1"></div>
+    <div class="bar-2"></div>
+    <div class="bar-3"></div>
+    <div class="bar-4"></div>
+    <div class="bar-5"></div>
+    <div class="bar-6"></div>
+    <div class="bar-7"></div>
+    <div class="bar-8"></div>
+    <div class="bar-9"></div>
+    <div class="bar-10"></div>
+    <div class="bar-11"></div>
+    <div class="bar-12"></div>
+</div>
